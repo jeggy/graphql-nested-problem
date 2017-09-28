@@ -2,6 +2,8 @@
 
 How to filter nested queries in graphql?
 
+You can see how the schema is defined [here](https://github.com/jeggy/graphql-nested-problem/blob/master/src/graphql/car.gql)
+
 Query:
 ```graphql
 {
