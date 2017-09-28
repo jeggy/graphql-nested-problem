@@ -1,5 +1,7 @@
 # Car Example problem
 
+_[This project is created to show a problem](https://github.com/graphql/graphql-js/issues/1047)_
+
 How to filter nested queries in graphql?
 
 You can see how the schema is defined [here](https://github.com/jeggy/graphql-nested-problem/blob/master/src/graphql/car.gql)
