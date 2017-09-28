@@ -1,0 +1,33 @@
+type Car{
+  id: ID!
+  model: String!
+  store: Store!
+  storeId: ID!
+  country: Country!
+  countryId: ID!
+}
+
+type Store {
+  id: ID!
+  name: String!
+  countries: [Country]!
+  countryIds: [ID]!
+  cars: [Car]!
+}
+
+type Country {
+  id: ID!
+  name: String
+  stores: [Store]!
+}
+
+type Query {
+  car(id: ID!): Car
+  cars(storeId: ID, countryId: ID): [Car]
+
+  store(id: ID!): Store
+  stores(countryId: ID): [Country]
+
+  country(id: ID!): Country
+  countries: [Country]
+}

@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "env"
+  ],
+  "sourceMaps": "inline",
+  "plugins": [
+    [
+      "babel-plugin-inline-import",
+      {
+        "extensions": [
+          ".gql"
+        ]
+      }
+    ],
+    [
+      "transform-runtime",
+      {
+        "polyfill": true,
+        "regenerator": true
+      },
+    ]
+  ]
+}
